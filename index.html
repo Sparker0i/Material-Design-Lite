@@ -1,25 +1,35 @@
 <html>
    <head>
-      <title>The Material Design Lite Example</title>
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.deep_purple-pink.min.css">
+      <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
       <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </head>
-  <body>
-      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
-         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Material Design</span>
+   </head>
+<body>
+   <!-- Always shows a header, even in smaller screens. -->
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+         <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">HTML5 Tutorial</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
             <nav class="mdl-navigation">
-               <a class="mdl-navigation__link" href="">Home</a>
-               <a class="mdl-navigation__link" href="">Features</a>
-               <a class="mdl-navigation__link" href="">About Us</a>
-               <a class="mdl-navigation__link" href="">Log Out</a>
+               <a class="mdl-navigation__link" href="" style="color:gray">Home</a>
+               <a class="mdl-navigation__link" href="" style="color:gray">About</a>
             </nav>
          </div>
-         <main class="mdl-layout__content">
-            <div class="page-content">Hello World!</div>
-         </main>
+      </header>
+      <div class="mdl-layout__drawer">
+         <span class="mdl-layout-title">HTML5 Tutorial</span>
+         <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Home</a>
+            <a class="mdl-navigation__link" href="">About</a>
+         </nav>
       </div>
-   </body>
+      <main class="mdl-layout__content">
+         <div class="page-content">Hello World!</div>
+      </main>
+   </div>
+</body>
 </html>
